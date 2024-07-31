@@ -1,0 +1,50 @@
+Simple Calculator Program
+
+This file describes the C++ program for a basic calculator that performs addition, subtraction, multiplication, and division based on user input.
+
+Code Structure
+
+1. Header Files and Namespace
+
+    - Header Files: The #include <iostream> directive includes the standard input-output stream library for reading user input and printing output.
+    - Namespace: using namespace std; allows the use of standard library functions and objects without needing to prefix them with std::.
+
+2. MAIN FUNCTION
+
+    - Variable Declarations:
+        - char op; - Variable to store the arithmetic operator entered by the user.
+        - float num1, num2; - Variables to store the two numbers provided by the user.
+
+    - User Input:
+        - The program prompts the user to enter an arithmetic operator and two numbers.
+        - cin >> op; - Reads the arithmetic operator from user input.
+        - cin >> num1 >> num2; - Reads the two numbers from user input.
+
+    - Switch Statement:
+        - The switch statement is used to perform the arithmetic operation based on the operator entered.
+        - Case '+': Performs addition and prints the result.
+        - Case '-': Performs subtraction and prints the result.
+        - Case '*': Performs multiplication and prints the result.
+        - Case '/': Performs division and prints the result. If the divisor (num2) is zero, it prints an error message to prevent division by zero.
+        - Default Case: Handles unsupported operators by printing an error message.
+
+    - Error Handling: The program prints an error message for unsupported operations and division by zero scenarios.
+
+3. Returning from Main Function
+
+    return 0;
+
+    - Return Statement: Indicates that the program has executed successfully. Returning 0 is a common convention to signify successful completion.
+
+Example Usage
+
+Enter an arithmetic operator (+ - * /):
++
+Enter two numbers as operands:
+5 3
+5 + 3 = 8
+
+Known Issues
+
+- Division by Zero: The program handles division by zero by printing an error message.
+
